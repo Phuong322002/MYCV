@@ -2,9 +2,14 @@ import LeftPart from "@components/leftPart"
 import MobilePortPolio from "@components/Mobile/mobile"
 import PreLoader from "@components/preloader"
 import RightPart from "@components/rightPart"
+import { FloatButton } from 'antd';
+import { useState } from "react";
+import { BiSolidToTop } from "react-icons/bi";
 
 
 const Portpolio = () => {
+
+    const [showHideLeftPart, setShowHideLeftPart] = useState<boolean>(true)
 
     return (
 
@@ -30,14 +35,21 @@ const Portpolio = () => {
                 <div className="arlo_tm_content">
 
                     {/* <!-- LEFTPART --> */}
-                    <LeftPart />
+                    <LeftPart
+                        showHideLeftPart={showHideLeftPart}
+                        setShowHideLeftPart={setShowHideLeftPart}
+                    />
                     {/* <!-- /LEFTPART --> */}
 
                     {/* <!-- RIGHTPART --> */}
-                    <RightPart />
+                    <RightPart
+                        showHideLeftPart={showHideLeftPart}
+                        setShowHideLeftPart={setShowHideLeftPart}
+                    />
                     {/* <!-- /RIGHTPART --> */}
 
-                    <a className="arlo_tm_totop" href="#"></a>
+                    {/* <a className="arlo_tm_totop" href="#"></a> */}
+                    <FloatButton.BackTop icon={<BiSolidToTop style={{ color: '#FF9900' }} />} />
 
                 </div>
             </div>

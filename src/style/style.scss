@@ -195,10 +195,10 @@ body {
 	word-wrap: break-word;
 	font-weight: 400;
 }
-svg {
+image {
 	fill: currentcolor;
-	width: 15px;
-	height: 15px;
+	width: 20px;
+	height: 20px;
 }
 img.svg {
 	width: 15px;
@@ -350,6 +350,7 @@ img.svg {
 			list-style-type: none;
 			li {
 				margin: 0px;
+				
 				&:last-child {
 					margin-bottom: 0px;
 				}
@@ -1284,11 +1285,18 @@ img.svg {
 				}
 				.icon {
 					margin-bottom: 21px;
-					.svg {
-						width: 40px;
+					
+						.img{
+							width: 100px;
 						height: 40px;
-						color: $color_3;
-					}
+							color: green;
+						}
+				
+					// .svg {
+					// 	width: 40px;
+					// 	height: 40px;
+					// 	color: $color_3;
+					// }
 				}
 				.title_service {
 					margin-bottom: 17px;
@@ -2126,9 +2134,9 @@ img.svg {
 	height: auto;
 	clear: both;
 	float: left;
-	text-align: left;
+	text-align: center;
 	background-color: $background-color_2;
-	padding: 50px 0px;
+	padding: 10px 0px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;

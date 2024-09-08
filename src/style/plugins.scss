@@ -4877,13 +4877,7 @@ input[type="button"] {
 			}
 		}
 	}
-	opacity: 1;
-	filter: "alpha(opacity=30)";
-	-ms-filter: "alpha(opacity=30)";
-	-webkit-border-radius: 7px;
-	-moz-border-radius: 7px;
-	border-radius: 7px;
-	box-shadow: inset 0 0 14px rgba(0,0,0,.2);
+	
 	.mCSB_draggerContainer {
 		-webkit-border-radius: 7px;
 		-moz-border-radius: 7px;
@@ -4912,6 +4906,16 @@ input[type="button"] {
 	.mCSB_buttonRight {
 		background-position: -120px -128px;
 	}
+	&{
+		opacity: 1;
+		filter: "alpha(opacity=30)";
+		-ms-filter: "alpha(opacity=30)";
+		-webkit-border-radius: 7px;
+		-moz-border-radius: 7px;
+		border-radius: 7px;
+		box-shadow: inset 0 0 14px rgba(0,0,0,.2);
+	}
+	
 }
 .mCS-3d-thick.mCSB_scrollTools {
 	.mCSB_dragger {
@@ -4948,12 +4952,15 @@ input[type="button"] {
 			}
 		}
 	}
-	opacity: 1;
-	filter: "alpha(opacity=30)";
-	-ms-filter: "alpha(opacity=30)";
-	-webkit-border-radius: 7px;
-	-moz-border-radius: 7px;
-	border-radius: 7px;
+	&{
+		opacity: 1;
+		filter: "alpha(opacity=30)";
+		-ms-filter: "alpha(opacity=30)";
+		-webkit-border-radius: 7px;
+		-moz-border-radius: 7px;
+		border-radius: 7px;
+	}
+
 	.mCSB_draggerContainer {
 		-webkit-border-radius: 7px;
 		-moz-border-radius: 7px;
@@ -5010,9 +5017,12 @@ input[type="button"] {
 			}
 		}
 	}
-	opacity: 1;
-	filter: "alpha(opacity=30)";
-	-ms-filter: "alpha(opacity=30)";
+	&{
+		opacity: 1;
+		filter: "alpha(opacity=30)";
+		-ms-filter: "alpha(opacity=30)";
+	}
+	
 	.mCSB_draggerRail {
 		-webkit-border-radius: 16px;
 		-moz-border-radius: 16px;
@@ -5054,7 +5064,10 @@ input[type="button"] {
 			height: 8px;
 			margin: 4px auto;
 		}
-		width: 70px;
+&{
+	width: 70px;
+
+}
 	}
 	.mCSB_draggerRail {
 		width: 100%;
@@ -5080,9 +5093,12 @@ input[type="button"] {
 			box-shadow: inset 0 1px 0 rgba(255,255,255,.4),inset 0 -1px 0 rgba(0,0,0,.2);
 		}
 	}
-	bottom: 1px;
-	box-shadow: inset 0 1px 1px rgba(0,0,0,.1),inset 0 0 14px rgba(0,0,0,.5);
-	box-shadow: inset 0 1px 1px rgba(0,0,0,.1),inset 0 0 14px rgba(0,0,0,.2);
+	&{
+		bottom: 1px;
+		box-shadow: inset 0 1px 1px rgba(0,0,0,.1),inset 0 0 14px rgba(0,0,0,.5);
+		box-shadow: inset 0 1px 1px rgba(0,0,0,.1),inset 0 0 14px rgba(0,0,0,.2);
+	}
+	
 }
 .mCS-3d-thick.mCSB_scrollTools_horizontal {
 	.mCSB_dragger {
@@ -5099,8 +5115,11 @@ input[type="button"] {
 			width: auto;
 		}
 	}
-	bottom: 1px;
-	box-shadow: inset 0 1px 1px rgba(0,0,0,.1),inset 0 0 14px rgba(0,0,0,.5);
+	&{
+		bottom: 1px;
+		box-shadow: inset 0 1px 1px rgba(0,0,0,.1),inset 0 0 14px rgba(0,0,0,.5);
+	}
+	
 }
 .mCS-3d.mCSB_scrollTools_horizontal {
 	.mCSB_dragger {
@@ -5116,7 +5135,10 @@ input[type="button"] {
 			height: 8px;
 			margin: 4px auto;
 		}
-		width: 70px;
+		&{
+			width: 70px;
+
+		}
 	}
 	.mCSB_draggerRail {
 		width: 100%;
@@ -5883,7 +5905,8 @@ input[type="button"] {
 		border-bottom-width: 21px;
 		opacity: .7;
 	}
-	-webkit-user-select: none;
+	&{
+		-webkit-user-select: none;
 	-moz-user-select: none;
 	user-select: none;
 	position: absolute;
@@ -5894,6 +5917,7 @@ input[type="button"] {
 	width: 90px;
 	height: 110px;
 	-webkit-tap-highlight-color: transparent;
+	}
 	&:active {
 		margin-top: -54px;
 	}
@@ -5919,7 +5943,10 @@ input[type="button"] {
 		z-index: -1;
 		background: #444;
 	}
-	line-height: 0;
+	&{
+		line-height: 0;
+
+	}
 	small {
 		color: $color_5;
 		display: block;
@@ -6096,10 +6123,12 @@ button.mfp-close {
 		height: 100%;
 		background: #000;
 	}
-	width: 100%;
+	&{
+		width: 100%;
 	height: 0;
 	overflow: hidden;
 	padding-top: 56.25%;
+	}
 }
 button {
 	&::-moz-focus-inner {
@@ -6121,8 +6150,10 @@ button {
 		width: 100%;
 		top: -40px;
 	}
-	padding-top: 40px;
-	padding-bottom: 40px;
+	&{
+		padding-top: 40px;
+	padding-bottom: 40px;	
+	}
 	.mfp-content {
 		line-height: 0;
 		width: 100%;
