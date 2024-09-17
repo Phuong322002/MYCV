@@ -28,7 +28,10 @@ const Portpolio = () => {
                 {/* <!-- /PRELOADER --> */}
 
                 {/* <!-- MOBILE MENU --> */}
-                <MobilePortPolio />
+                <MobilePortPolio
+                    showHideLeftPartMb={showHideLeftPart}
+                    setShowHideLeftPartMb={setShowHideLeftPart}
+                />
                 {/* <!-- /MOBILE MENU --> */}
 
                 {/* <!-- CONTENT --> */}

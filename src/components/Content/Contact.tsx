@@ -6,7 +6,7 @@ const Contact = () => {
         <>
             <div className="arlo_tm_section" id="contact">
                 <div className="container">
-                    <div className="arlo_tm_title_holder contact">
+                    <div className="arlo_tm_title_holder contact" style={{ marginTop: '100px' }}>
                         <h3>Contact Me</h3>
                         <span>Get in touch with me</span>
                     </div>

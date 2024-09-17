@@ -100,8 +100,8 @@ const ProjectPortpolio = () => {
 
                 </Modal>
             </>
-            <div className="arlo_tm_section" id="projects">
-                <div className="arlo_tm_services_wrap">
+            <div className="arlo_tm_section" id="projects" >
+                <div className="arlo_tm_services_wrap" style={{ marginTop: '100px' }}   >
                     <div className="container">
                         <div className="arlo_tm_title_holder">
                             <h3>Projects</h3>

@@ -218,7 +218,7 @@ img.svg {
 	height: auto;
 	clear: both;
 	float: left;
-	-webkit-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
@@ -391,6 +391,13 @@ img.svg {
 							width: 35px;
 						}
 					}
+
+					&.active{
+						color: $color_3;
+						// &:before {
+						// 	width: 35px;
+						// }
+					}
 				}
 			}
 		}
@@ -510,7 +517,7 @@ img.svg {
 	height: auto;
 	clear: both;
 	float: left;
-	margin-bottom: 100px;
+	// margin-bottom: 100px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -689,7 +696,7 @@ img.svg {
 		height: 100vh;
 	}
 	.overlay_image.testimonial {
-		background-image: url(../img/hero/3.jpg);
+		background-image: url(@/assets/img/hero/3.jpg);
 	}
 	.overlay_color.testimonial {
 		background-color: $background-color_4;
@@ -1043,7 +1050,7 @@ img.svg {
 	box-sizing: border-box;
 	background-color: $background-color_5;
 	padding: 90px 0px;
-	margin-bottom: 100px;
+	// margin-bottom: 100px;
 	display: flex;
 	flex-direction: column;
 	gap: 60px;
@@ -1235,7 +1242,7 @@ img.svg {
 	clear: both;
 	float: left;
 	background-color: $background-color_1;
-	margin-bottom: 70px;
+	// margin-bottom: 70px;
 	text-align: left;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -2212,7 +2219,7 @@ img.svg {
 .arlo_tm_universal_box_wrap.particle {
 	height: 100vh;
 	position: relative;
-	background-image: url(../img/hero/2.jpg);
+	background-image: url(../hero/2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -2231,7 +2238,7 @@ img.svg {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	background-image: url(../img/hero/2.jpg);
+	background-image: url(@/assetsimg/hero/2.jpg);
 	position: relative;
 	.overlay {
 		position: absolute;
@@ -2283,7 +2290,7 @@ img.svg {
 			z-index: 20;
 		}
 		.overlay_image.top {
-			background-image: url(../img/hero/2.jpg);
+			background-image: url(@/assets/img/hero/2.jpg);
 		}
 		.overlay_color.top {
 			background-color: $background-color_11;
@@ -2840,9 +2847,17 @@ img.svg {
 					font-family: $font-family_2;
 					font-weight: 600;
 					font-size: 19px;
+					&.active{
+						color: $color_3;
+						// &:before {
+						// 	width: 35px;
+						// }
+					}
 				}
 			}
 		}
+	
+	
 	}
 }
 @media (max-width: 1400px) {

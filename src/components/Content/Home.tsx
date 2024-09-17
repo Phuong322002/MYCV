@@ -4,6 +4,13 @@ import avatar from '@/assets/img/hero/img.jpg'
 
 const HomePortfolio = () => {
 
+    const hanldeScrollToView = () => {
+        const section = document.querySelector('#about');
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
+
     return (
 
         <>
@@ -44,7 +51,7 @@ const HomePortfolio = () => {
                             </div>
                         </div>
                         <div className="arlo_tm_arrow_wrap bounce anchor">
-                            <a href="#about"><i className="xcon-angle-double-down"></i></a>
+                            <a href="#" onClick={() => { hanldeScrollToView() }}><i className="xcon-angle-double-down"></i></a>
                         </div>
                     </div>
                 </div>

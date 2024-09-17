@@ -14,10 +14,9 @@ const RightPart = (props: IProps) => {
     return (
 
         <>
-            <div className={showHideLeftPart === true ? "arlo_tm_rightpar opened" : 'arlo_tm_rightpar'}>
+            <div className={showHideLeftPart === true ? "arlo_tm_rightpart opened" : 'arlo_tm_rightpart'}>
                 <div className="rightpart_inner">
                     <HomePortfolio />
-
                     {/* <!-- ABOUT --> */}
                     <AboutPortfolio />
                     {/* <!-- /ABOUT --> */}
